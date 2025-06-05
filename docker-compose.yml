@@ -1,25 +1,25 @@
 version: '3.8'
 services:
   movies:
-    image: akibjabarbhat786/paymovies:latest
+    image: akibjabarbhat786/movies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: akibjabarbhat786/paytrain:latest
+    image: akibjabarbhat786/train:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: akibjabarbhat786/paydth:latest
+    image: akibjabarbhat786/dth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: akibjabarbhat786/payrecharge:latest
+    image: akibjabarbhat786/recharge:latest
     ports:
       - "84:80"
     deploy:
